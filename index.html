@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metafont@hfg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+
+    <div id="header2">
+       
+        <img id="banner" src="METAFONT_logo.svg">
+         <p id="info">HfG Karlsruhe<br>Colloquium<br> Summer 2025 <br> Paul Bernhard</p>
+    </div>
+
+    
+    <div id="bar">
+    <a href="https://gitlab.com/paulbernhard/teaching/hfg-metafont">seminar storage</a>
+    <a href="url">link text</a>
+    <a href="url">link text</a>
+    <a href="url">link text</a>
+    </div>
+    <div class="main">
+        
+    <div class="textbox"> 
+        
+        <details>
+        <summary><p class="fontnames">MF. SHAKER</p></summary>
+        <p class="blue">MF. SHAKER by Niklas Weisenbach</p>
+        <p> readme: Metafont does normally come with any LaTeX software installation. As LaTeX or TeX is preinstalled on most Linux or Mac operating systems, these systems should or might have Metafont installed. In case you do not have Metafont installed, go through the following steps, according to your operating system.
+The software requirements for this class to work with metafont are:
+
+Metafont
+
+Fontforge (font editor used to outline and trace mf files)
+
+mftrace (script to automate mf tracing w/ the help of Fontforge)
+
+You can check if Metafont is installed by running the mf --version command from your command line.</p>
+        <pre>beginchar("W", 13pt#, 13pt#, 0);
+  pickup pensquare scaled 1pt;
+  x1=0;
+  y1=h;
+  x2=0.25w;
+  y2=0;
+
+  x3=0.5w;
+  y3=0.5h;
+
+  x4=0.75w;
+  y4=0;
+
+  x5=w;
+  y5=h;
+
+  path p;
+  p = z1--z2--z3--z4--z5;
+  draw z1--z2--z3--z4--z5;
+
+  pickup penrazor scaled 0.1pt;  
+  for i=0 upto 100:
+
+      draw (point (length p* (i/100)) of p) -- (0.5w,0.5h);
+
+  endfor;
+
+endchar;
+
+beginchar("Z", 13pt#, 13pt#, 0);
+
+  pickup pensquare scaled 1pt;
+  x1 = 0;
+  y1 = 0;
+
+  x2 = w;
+  y2 = y1;
+
+  x3 = x2;
+  y3 = h;
+
+  x4 = x1;
+  y4= y3;
+
+  draw z4--z3--z1--z2;
+  draw z3--z4; 
+  path p;
+  p = z4--z3--z1--z2;
+  
+  penlabels(1,2,3,4);
+
+
+  pickup penrazor scaled 0.01pt;
+   for i=0 upto 100:
+      draw (point (length p* (i/100)) of p) -- (w*(i/100),h*(i/100));
+  endfor;
+
+endchar;
+
+
+beginchar("M", 13pt#, 13pt#, 0);
+
+  pickup pensquare xscaled 2pt;
+  x1 = 0;
+  y1 = 0;
+
+  x2 = 0;
+  y2 = h;
+
+  x3 = w;
+  y3 = y1;
+
+  x4 = w;
+  y4 = h;
+
+  x5 = 0.5w;
+  y5 = 0.5h;
+
+  draw z1--z2--z5--z4--z3;
+  path p;
+  p = z1--z2--z5--z4--z3;
+
+  pickup penrazor scaled 0.02pt;
+   for i=0 upto 100:
+
+      draw (point (length p* (i/100)) of p) -- (w*(i/100),h*(i/100));
+
+  endfor;
+endchar; </pre>
+        </details>    
+         <p class="fontnames">PK Gerät</p>
+        <p class="fontnames">Write me</p>
+        <p class="fontnames">Knight Playground</p>
+        <p class="fontnames">Metamorph</p>
+        <p class="fontnames">BEKSO.01</p>
+        <p class="fontnames">X-treme Serif</p>
+         <p class="fontnames">Bugs</p>
+    </div>
+    
+    <div class="textbox2">
+
+<p>
+Metafont is a software and a chameleon of sorts. It allows a designer to describe typographic characters algorithmically for the very intelligence of a letter to “be captured in a way that permits us to obtain an infinite variety of related letters from the same specification.” Sounds daring? <br><br>
+
+Somewhen in the 1960s printed matter is typically typeset with metal letters. Setting these typographic chunks into lines of words, sentences and paragraphs, the composition of a single page seems a daunting task. — where is the O? Heck, i’ll just use a 0 — And when the first two humble volumes of The Art of Computer Programming by Donald E. Knuth are published, typesetters are faced with multistoried mathematical formulas of cryptic symbols, by the hundreds, and just a few dozen gifted ones are capable of composing such a technical text into a readable printed matter.<br><br>
+
+Later, in 1972, the second volume of The Art of Computer Programming is out of print and to be reissued. This time set with phototypesetting, an emerging technology rapidly replacing its hot metal counterpart. Still in its infancy, the new light-based technology produces a poor quality of printed formulas that leaves Donald deeply disappointed and wondering why one should spend six years in writing what nobody will be able to read. He sets out to tackle this problem on his own and designs a new digital typesetting system, “TeX”, accompanied by an independent font description system, “Metafont”. These softwares will become an instrument used by scientists around the world to facilitate the typesetting and publication of scientific papers. For Donald equations must “endure the smudge of the over-inked press onto the flimsiest of papers. They must not fade away on the drum of a laserprinter, nor under the not-so bright light of ancient photocopiers in the math library. The letters must not blur under the dimmest of lighting near the periodicals through the foggiest of trifocals; they must shine clearly through the forest of pen scratching during proofreading.”<br><br>
+
+Whether Metafont was and is an efficient candidate to meet these ambitious criteria remains questionable. But we will take its story as a starting point for this colloquium on: Metafont, its birth, its matter, and its arrogance. On four dates we will look further into the history of this font description language, put it to use and describe characters together — an O, or an 0, or… let's see. There will be code and we will move in the austere environment of the computer command line, so any existing knowledge of programming might proof helpful. But if you are neither familiar with code or nor a big friend of algebra, never fear, we will all be in the same boat together, full of mistakes.</p>    
+        
+    </div>
+</div>
+   
+    <footer>
+        https://gitlab.com/paulbernhard/teaching/hfg-metafont#basic-structure-of-a-metafont-file
+Paul Bernhard__Niklas Weisenbach__Paul Lu Kellert__Lohann Poasevara__Jiaxuan He__Finn Milbrandt__Alice Seefried__Nayeon Park__Estella Staader__cycle
+    </footer>
+</body>
+</html>

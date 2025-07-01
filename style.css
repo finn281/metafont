@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 16pt;
+    border: 5px;
+    margin: auto;
+    padding: 15px;
+    font-family: "Xanh Mono", monospace; 
+}
+
+.blue {
+    color: white;
+    background-color: blue;
+}
+
+pre {
+    color: white;
+    font-size: 7pt;
+    text-align: right;
+}
+
+p {
+    color:white;
+}
+
+details {
+  
+  border: none;
+  cursor: pointer;
+    color: blue;
+    
+}
+
+.fontnames {
+    font-size: 90pt;
+    font-family: "Xanh Mono", monospace; 
+    font-weight: 100;
+    color: white;
+}
+
+#bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#header2 {
+    max-height: 300px;
+    display: flex;           
+    align-items: center;     
+    padding: 15px;         
+    border: 2px dotted #ccc;  
+    border-radius: 8px; 
+}
+
+#info {
+    font-size: 16pt;
+}
+
+#banner {
+    width: 80%;
+    max-height:300px;
+    filter: invert(100%);
+}
+
+.main {
+    display: flex;  
+}
+
+.textbox {
+    /*background-image: url(pattern.svg);*/
+   
+    color: black;
+    margin-right: auto;  
+    padding: 15px;         
+    border: 10px;
+    font-size: 16pt;
+    max-width: 60%;
+    
+}
+
+.textbox2 {
+    color: white;
+    display: flex;           
+    margin-left: auto;
+    padding: 15px;         
+    border: 10px;
+    width: 30%;
+    font-size: 16pt;
+}
+
+@keyframes mymove {
+    0% {opacity: 0%}
+  50% {opacity: 100%}
+    100% {opacity: 0%}
+}
+
+footer7 {
+   
+
+    padding: 0px;         
+    border: 0px;
+    min-width: 20%;
+    min-height: 30%;
+    font-size: 16pt;
+    background-image: url(pattern.svg);
+    background-blend-mode: screen;
+    background-size: auto;
+    animation: mymove 5s infinite;
+   
+}
+
+footer {
+    
+    font-size: 16pt;
+}
