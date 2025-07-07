@@ -29,12 +29,12 @@ details {
   
   border: none;
   cursor: pointer;
-    color: blue;
-    
+  color: blue;
 }
 
 .fontnames {
     font-size: 90pt;
+    line-height: 0pt;
     font-family: "Xanh Mono", monospace; 
     font-weight: 100;
     color: white;
@@ -71,14 +71,13 @@ details {
 
 .textbox {
     /*background-image: url(pattern.svg);*/
-   
     color: black;
     margin-right: auto;  
     padding: 15px;         
     border: 10px;
+    margin: 0;
     font-size: 16pt;
     max-width: 60%;
-    
 }
 
 .textbox2 {
@@ -98,8 +97,6 @@ details {
 }
 
 footer7 {
-   
-
     padding: 0px;         
     border: 0px;
     min-width: 20%;
@@ -113,6 +110,5 @@ footer7 {
 }
 
 footer {
-    
     font-size: 16pt;
 }
