@@ -10,6 +10,10 @@ body {
     font-family: "Xanh Mono", monospace; 
 }
 
+.font {
+    filter: invert(100);
+}
+
 .blue {
     color: white;
     background-color: blue;

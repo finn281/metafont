@@ -29,7 +29,7 @@
         <div class="textbox"> 
             <!-- NIKLAS -->
             <details>
-            <summary><p class="fontnames">MF. SHAKER</p></summary>
+            <summary><img class="font" src="mfshaker.bmp"></summary>
                 <p class="blue">MF. SHAKER by Niklas Weisenbach</p>
 
                 <p> 
@@ -70,7 +70,7 @@
             
             <!-- LU -->
             <details>
-            <summary><p class="fontnames">PK Gerät</p></summary>
+            <summary><img class="font" src="pkgeraet.bmp"></summary>
                 <p class="blue">PK Gerät by Paul Lu Kellert</p>
 
                 <p> 
@@ -152,12 +152,15 @@
             
             <!-- Josh -->
               <details>
-            <summary><p class="fontnames">Knight Playground</p></summary>
+            <summary><img class="font" src="knightplayground.bmp"></summary>
                 <p class="blue">Knight Playground by Jiaxuan He</p>
 
                 <p> 
-                readme: MF. Shaker is a typeface written in the typographic description language METAFONT. Its design draws inspiration from stencil lettering found in a book called “Shop Drawings on Shaker Furniture  and Woodenware Volume 1”. As the letters   were scanned at various scales, they took on differing stroke widths. These subtle inconsistencies – combined with a few imperfections – give  MF. Shaker its distinctive personality and handmade feel. Currently, MF. Shaker supports a basic character set available in six cuts and as Outline-Fonts (.ttf): 1/4 INCHES (+), 1/6 INCHES (+),  and 1/8 INCHES (+). In addition to these core cuts, there is a alternate cut created using a different pen: 2/6 INCHES (+). 
-                *+ stands for a slanted cut of 12.5 degree</p> 
+                        readme: Knight Playground is a monospaced typeface which exhibits a clear-cut appearance with slight handwritten features. It serves both as a text and a display typeface with three cuts: 
+                        >> Light, 
+                        >> Regular 
+                        >> Bold. 
+                        Knight Playground has a wide range of use cases, such as from writing code for automatic pizza ordering to writing sophisticated texts from the middle ages about Arthurian legends. </p> 
 
                 <a href="https://pool.swrs.net/s/goDXkgepBDFof4c?dir=/jiaxuan">Download Typeface</a>
                 <pre>beginchar("W", 13pt#, 13pt#, 0);
@@ -233,14 +236,84 @@
             </details> 
             <!-- ALICE -->
             <details>
-            <summary><p class="fontnames">BEKSO.01</p></summary>
+            <summary><img class="font" src="bekso.bmp"></summary>
                 <p class="blue">BEKSO.01 by Alice Seefried</p>
 
                 <p> 
-                readme: MF. Shaker is a typeface written in the typographic description language METAFONT. Its design draws inspiration from stencil lettering found in a book called “Shop Drawings on Shaker Furniture  and Woodenware Volume 1”. As the letters   were scanned at various scales, they took on differing stroke widths. These subtle inconsistencies – combined with a few imperfections – give  MF. Shaker its distinctive personality and handmade feel. Currently, MF. Shaker supports a basic character set available in six cuts and as Outline-Fonts (.ttf): 1/4 INCHES (+), 1/6 INCHES (+),  and 1/8 INCHES (+). In addition to these core cuts, there is a alternate cut created using a different pen: 2/6 INCHES (+). 
-                *+ stands for a slanted cut of 12.5 degree</p> 
+                    readme: BEKSO.01 is a geometric typeface with subtle playful elements and a slightly futuristic feel. Its simple and clean structure makes it versatile for various design applications.
+                    The font works best as a display typeface, suitable for headlines and titles, but it also maintains readability when used in body text. Its balanced design allows for flexibility without compromising clarity.
+                    This is the first release of the BEKSO family. Maybe it will be further developed, with BEKSO.02 or different cut styles.</p> 
 
                 <a href="https://pool.swrs.net/s/goDXkgepBDFof4c?dir=/alice">Download Typeface</a>
+                <pre>   beginchar("a", 70pt#, 90pt#, 0);
+                        pickup pencircle scaled penwidth;
+
+                        % untere waagrechte Linie
+                        x1 = 60pt; y1 = 0pt;
+                        x2 = 20pt;  y2 = 0pt;    
+                        x3 = 10pt; y3 = 10pt;
+
+                        %senkrechte links
+                        x4 = 20pt; y4 = 20pt;
+                        x5 = 60pt; y5 = 20pt;
+
+                        % obere waagrechte Linie
+                        x7 = 60pt;    y7 = 0pt;
+                        x6 = 60pt;  y6 = 30pt;
+                        x8 = 50pt;  y8 = 40pt;
+                        x9 = 20pt;  y9 = 40pt;
+                        x10 = 10pt;   y10 = 30pt;
+
+
+
+                        %zeichnen
+                        draw z1--z2{left} .. z3{up}..z4{dir 15}--z6{right};
+                        draw z7{up} -- z6{up}..z8{left}--z9{left}..z10{down};
+
+
+                        penlabels(1,2,3,4,5,6,7,8,9,10);
+                        endchar;
+                </pre>
+            </details>
+            
+            <!-- NAYEON -->
+            <details>
+            <summary><img class="font" src="xtremeserif.bmp"></summary>
+                <p class="blue">X-treme Serif by Nayeon Park</p>
+
+                <p> 
+                        readme: **X-treme Serif** is an experimental serif typeface developed using the Metafont programming language—a system for designing type with code and parameters.  
+                            It creates explosive, dynamic curves through adjustable variables like x-height, cap-height, and pen angle.  
+                            This is a **display typeface**, designed for impactful use in titles, headlines, posters, and other contexts where bold visual expression is key.
+
+                            Metafont is a system developed by Donald Knuth that defines fonts through mathematical descriptions rather than traditional drawing.  
+                            It allows designers to generate letterforms by writing code, enabling flexible, parametric control over shape and structure.
+
+
+
+                            **X-treme Serif Family**
+                            Core x-height:= 5; cap-height:= 8; pen rotated:= 310°;
+                            Lift x-height:= 5; cap-height:= 18; pen rotated:= 310°;	
+                            Overdrive x-height:= 15; cap-height:= 18; pen rotated:= 310°;
+                            Burnout C1 x-height:= 15; cap-height:= 28; pen rotated:= 50°;
+                            Burnout C2 x-height:= 15; cap-height:= 28; pen rotated:= 310°;
+                            Whiplash C1 x-height:= 15; cap-height:= 38; pen rotated:= 180°;
+                            Whiplash C2 x-height:= 15; cap-height:= 38; pen rotated:= 310°;
+
+                                             ,,,,,,,,,,,,,,,,,,,,
+                                            ( Set it on Whiplash!)
+                              ♪　∧,＿∧       ( Then dance with me )
+                               (´･ω･`) ))   |/'''''''''''''''''''
+                             (( (　つ　ヽ、　♪
+                               〉 とノ　 )))
+                              （__ノ^(＿)
+
+                            ----------------------------------
+                            Designed by Park Nayeon, July 2025
+                            Developed as part of the **Metafont** course by Paul Bernhard at HfG Karlsruhe.
+                            Version: 1.0 </p> 
+
+                <a href="https://pool.swrs.net/s/goDXkgepBDFof4c?dir=/nayeon">Download Typeface</a>
                 <pre>beginchar("W", 13pt#, 13pt#, 0);
                     pickup pensquare scaled 1pt;
                     x1=0;
@@ -272,8 +345,47 @@
                 </pre>
             </details>
          
-            <p class="fontnames">X-treme Serif</p>
-             <p class="fontnames">Bugs</p>
+            <!-- ESTELLA-->
+          
+            <summary><img class="font" src="bugs.bmp"></summary>
+                <p class="blue">Bugs by Estella Staader</p>
+
+                <p> 
+                    readme: Bugs invites a more playful approach to things. By embracing the initially awkward controls of  Metafont, a dynamic, frivolous, and somewhat disobedient display typeface came to be. Thick strokes, round shapes and and a mix of upper- and lowercase letters add to its mischievous character. Bugs dares you: go chill a bit. Touch some grass. Be amused by a bug on your computer and be amazed by a bug on your finger.
+
+                    Bugs currently comes in one weight and consists of a mixed-case Latin letter set. Recommended use: any shenanigans you can dream up.</p> 
+
+                <a href="https://pool.swrs.net/s/goDXkgepBDFof4c?dir=/estella">Download Typeface</a>
+                <pre>   beginchar("a", 70pt#, 90pt#, 0);
+                        pickup pencircle scaled penwidth;
+
+                        % untere waagrechte Linie
+                        x1 = 60pt; y1 = 0pt;
+                        x2 = 20pt;  y2 = 0pt;    
+                        x3 = 10pt; y3 = 10pt;
+
+                        %senkrechte links
+                        x4 = 20pt; y4 = 20pt;
+                        x5 = 60pt; y5 = 20pt;
+
+                        % obere waagrechte Linie
+                        x7 = 60pt;    y7 = 0pt;
+                        x6 = 60pt;  y6 = 30pt;
+                        x8 = 50pt;  y8 = 40pt;
+                        x9 = 20pt;  y9 = 40pt;
+                        x10 = 10pt;   y10 = 30pt;
+
+
+
+                        %zeichnen
+                        draw z1--z2{left} .. z3{up}..z4{dir 15}--z6{right};
+                        draw z7{up} -- z6{up}..z8{left}--z9{left}..z10{down};
+
+
+                        penlabels(1,2,3,4,5,6,7,8,9,10);
+                        endchar;
+                </pre>
+            </details>
         </div>
 
         <div class="textbox2">
