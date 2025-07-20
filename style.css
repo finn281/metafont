@@ -35,6 +35,8 @@ body {
     font-family: 'cmu_typewriter_text_variablMd';
 }
 
+
+
 .font {
     filter: invert(100);
     max-width: 100%;
@@ -48,8 +50,7 @@ body {
 
 pre {
     color: white;
-    font-size: 7pt;
-    text-align: right;
+    text-align: left;
     font-family: 'cmu_typewriter_text_variablMd';
 }
 
@@ -59,17 +60,24 @@ p {
 }
 
 .highlight2 {
+    color: black;
+    font-family: 'cmu_serifbold';
+    font-size: 16pt;
+    text-align: center;
+}
+
+.highlight {
     color: white;
     font-family: 'cmu_serifbold';
-    font-size: 40px;
-    transform: scaleY(2.5);
+    font-size: 20pt;
+
 }
 
 details {
   
   border: none;
   cursor: pointer;
-  color: blue;
+  color: black;
 }
 
 .fontnames {
@@ -87,12 +95,14 @@ details {
 }
 
 #header2 {
-    max-height: 300px;
-    display: flex;           
-    align-items: center;     
-    padding: 15px;         
-    border: 2px dotted #ccc;  
-    border-radius: 0px; 
+    max-height: 300px;          
+    align-items: left;     
+    padding: 0px; 
+    margin: 20px;
+    background-color: white;
+    
+    border: 1px solid black;
+    border-radius: 40px;
 }
 
 #info {
@@ -142,6 +152,7 @@ footer7 {
     min-width: 20%;
     min-height: 30%;
     font-size: 16pt;
+    position: absolute;
     background-image: url(pattern.svg);
     background-blend-mode: screen;
     background-size: auto;
@@ -152,3 +163,22 @@ footer7 {
 footer {
     font-size: 16pt;
 }
+
+
+.image-grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .image-grid-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .image-grid-container img {
+            width: 100%;
+            height: auto; 
+            display: block;
+        }
