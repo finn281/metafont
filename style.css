@@ -35,7 +35,9 @@ body {
     font-family: 'cmu_typewriter_text_variablMd';
 }
 
-
+#posterBG {
+    background-color: white;
+}
 
 .font {
     filter: invert(100);
