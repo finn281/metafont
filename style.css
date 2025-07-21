@@ -24,6 +24,71 @@
 }
 
 
+@font-face {
+    font-family: 'bug-regular-webfont';
+    src:
+         url('fonts/bug-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bekso-webfont';
+    src:
+         url('fonts/bekso-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'knight_playground_regular-webfont';
+    src:
+         url('fonts/knight_playground_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bug-regular-webfont';
+    src:
+         url('fonts/bug-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mf.shaker-14inches-webfont';
+    src:
+         url('fonts/mf.shaker-14inches-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pk_geraet-regular-webfont';
+    src:
+         url('fonts/pk_geraet-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'write_me_regular-webfont';
+    src:
+         url('fonts/write_me_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'x-treme-core-webfont';
+    src:
+         url('fonts/x-treme-core-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     background-color: black;
     color: white;
@@ -37,6 +102,49 @@ body {
 
 #posterBG {
     background-color: white;
+}
+
+.bekso{
+    font-family: 'bekso-webfont';
+    font-size: 16pt;
+    -webkit-user-modify: read-write;
+}
+
+.bug{
+    font-family: 'bug-regular-webfont';
+    font-size: 60pt;
+    -webkit-user-modify: read-write;
+}
+
+.mfshaker{
+    font-family: 'mf.shaker-14inches-webfont';
+    font-size: 60pt;
+    -webkit-user-modify: read-write;
+}
+
+.pkgeraet{
+    font-family: 'pk_geraet-regular-webfont';
+    font-size: 60pt;
+    -webkit-user-modify: read-write;
+}
+
+.writeme{
+    font-family: 'write_me_regular-webfont';
+    font-size: 60pt;
+    -webkit-user-modify: read-write;
+}
+
+.xtreme{
+    font-family: 'x-treme-core-webfont';
+    font-size: 60pt;
+    -webkit-user-modify: read-write;
+}
+
+.knight_playground_regular-webfont {
+     font-family: 'knight_playground_regular-webfont';
+    font-size: 60pt;
+    letter-spacing: 15px;
+    -webkit-user-modify: read-write;
 }
 
 .font {
@@ -66,6 +174,7 @@ p {
     font-family: 'cmu_serifbold';
     font-size: 16pt;
     text-align: center;
+    /*-webkit-user-modify: read-write;*/
 }
 
 .highlight {
