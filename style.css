@@ -106,50 +106,51 @@ body {
 
 .bekso{
     font-family: 'bekso-webfont';
-    font-size: 16pt;
+    font-size: 17pt;
     -webkit-user-modify: read-write;
 }
 
 .bug{
     font-family: 'bug-regular-webfont';
-    font-size: 60pt;
+    font-size: 45pt;
     -webkit-user-modify: read-write;
 }
 
 .mfshaker{
     font-family: 'mf.shaker-14inches-webfont';
-    font-size: 60pt;
+    font-size: 75pt;
     -webkit-user-modify: read-write;
 }
 
 .pkgeraet{
     font-family: 'pk_geraet-regular-webfont';
-    font-size: 60pt;
+    font-size: 75pt;
     -webkit-user-modify: read-write;
 }
 
 .writeme{
     font-family: 'write_me_regular-webfont';
-    font-size: 60pt;
+    font-size: 65pt;
     -webkit-user-modify: read-write;
 }
 
 .xtreme{
     font-family: 'x-treme-core-webfont';
-    font-size: 60pt;
+    font-size: 65pt;
     -webkit-user-modify: read-write;
 }
 
 .knight_playground_regular-webfont {
      font-family: 'knight_playground_regular-webfont';
-    font-size: 60pt;
-    letter-spacing: 15px;
+    font-size: 68pt;
+    letter-spacing: 13px;
     -webkit-user-modify: read-write;
 }
 
 .font {
     filter: invert(100);
-    max-width: 100%;
+    max-width: 80%;
+
 }
 
 .blue {
@@ -181,14 +182,16 @@ p {
     color: white;
     font-family: 'cmu_serifbold';
     font-size: 20pt;
-
 }
 
 details {
-  
   border: none;
   cursor: pointer;
   color: black;
+}
+
+summary {
+    line-height: 0;
 }
 
 .fontnames {
