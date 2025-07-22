@@ -108,6 +108,7 @@ body {
     font-family: 'bekso-webfont';
     font-size: 17pt;
     -webkit-user-modify: read-write;
+    z-index: 1000;
 }
 
 .bug{
@@ -149,7 +150,7 @@ body {
 
 .font {
     filter: invert(100);
-    max-width: 80%;
+    max-width: 50%;
     z-index: -4000;
 
 }
